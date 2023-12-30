@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loop-20</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--
+    Ah, it smells like a new challenge!
+
+    This time we build a concept of some job search website.
+
+    The other gimmick we introduce here is about using font icons instead of inserting images into our code.
+    The easiest out-of-the-box method is to use Google Material Icons,
+    so read about the implementation before you start:
+    https://material.io/icons/
+
+    And good luck!
+  -->
+
+    <!--HEADER-->
+    <header class="header">
+      <div class="header__linkedin">
+        <img src="./img/logo.png" />
+      </div>
+      <div class="header__search">
+        <input type="text" placeholder="Search" />
+        <img src="./img/search.svg" class="header__search-img" />
+      </div>
+      <nav>
+        <p class="link">Home</p>
+        <p class="link">Profile</p>
+        <p class="link">Connections</p>
+        <p class="link">Interest</p>
+        <p class="premium">Try Premium</p>
+      </nav>
+      <div class="header__icons">
+        <span class="material-icons head" style="color: #2bcd71"> chat </span>
+        <span class="material-icons head" style="color: #f1c40f">
+          notifications
+        </span>
+        <span class="material-icons head" style="color: #9b58b6">
+          person_add
+        </span>
+      </div>
+      <div class="header__avatar">
+        <img src="./img/avatar.jpg" class="header__avatar-image" />
+      </div>
+    </header>
+    <hr />
+
+    <div class="sub-headings">
+      <div class="sub-headings_content">
+        <p>Posts</p>
+        <p>Background</p>
+        <p>Recommendation</p>
+        <p>Following</p>
+      </div>
+    </div>
+    <div class="dash"></div>
+
+    <!--PROFILE, POST, CONTENT, REVIEWS AND SO ON...-->
+
+    <div class="contents">
+      <div class="contents__profile">
+        <div class="content__biography">
+          <img
+            src="./img/bill-gates-avatar.png"
+            class="contents__profile-image" />
+          <h2>Bill Gates</h2>
+          <p>Microsoft Founder</p>
+          <span class="contents__profile-text">Great Settle Area</span>
+          <div class="contents__profile-follow">
+            <p>Follow</p>
+          </div>
+          <div class="contents__profile-connect">
+            <p>Connect</p>
+            <span class="material-icons"> expand_more </span>
+          </div>
+        </div>
+
+        <div class="contents__profile-ratings">
+          <div class="connections">
+            <b>200</b>
+            <p class="contents__profile-ratings-text">connecti...</p>
+          </div>
+          <div class="followers">
+            <b>1.9M</b>
+            <p class="contents__profile-ratings-text">followers</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="profile-links">
+            <span class="material-icons"> link </span>
+            linkedin.com/in/billgat...
+          </p>
+          <p class="profile-links">
+            <span class="material-icons"> language </span>
+            billgates.com
+          </p>
+        </div>
+
+        <div>
+          <p class="profile-links">
+            <span class="material-icons" style="width: 1.5rem"> upload_2 </span>
+            Export page as PDF
+          </p>
+        </div>
+      </div>
+
+      <div class="contents__posts">
+        <div class="contents__posts-post">
+          <div class="contents__posts-headings">
+            <h1>POSTS</h1>
+            <div>
+              <span class="material-icons post-icon" id="icon">
+                chevron_left
+              </span>
+              <span class="material-icons post-icon" id="icon">
+                chevron_right
+              </span>
+            </div>
+          </div>
+
+          <div class="article">
+            <div class="article-text">
+              <img src="./img/article1.jpg" class="article-image" />
+              <h4>3 Myths That Confuse Top-Managers</h4>
+              <p class="light-colors">February 19, 2016</p>
+            </div>
+
+            <div class="article-text">
+              <img src="./img/article2.jpg" class="article-image" />
+              <h4>How much do we spend on hot drinks</h4>
+              <p class="light-colors">February 19, 2016</p>
+            </div>
+
+            <div class="article-text">
+              <img src="./img/article3.jpg" class="article-image" />
+              <h4>Good news you might have noticed</h4>
+              <p class="light-colors">February 19, 2016</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contents__posts-background-headings">
+          <h3>BACKGROUND</h3>
+        </div>
+        <div class="contents__posts-background-text">
+          <div class="start-text">
+            <span class="material-icons"> assignment </span>
+            <p>Summary</p>
+          </div>
+          <p class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+            quibusdam, totam delectus doloribus ipsa aliquid sed eum nam, error
+            dignissimos corrupti saepe soluta magnam. Ullam unde porro soluta
+            eos exercitationem. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolor qui officiis dolores? Nemo id debitis quasi
+            illum, natus vero itaque.
+          </p>
+
+          <div>
+            <div class="start-text">
+              <span class="material-icons"> work </span>
+              <p>Experience</p>
+            </div>
+            <div class="skills">
+              <div>
+                <div class="page">
+                  <div class="page-content">
+                    <div class="mark">
+                      <div class="dots"></div>
+                      <div class="line"></div>
+                      <div class="dots"></div>
+                    </div>
+                    <div>
+                      <p class="light-text">2000 - PRESENT</p>
+                      <p>Co-founder, Chairman</p>
+                      <p class="colored-text">Microsoft</p>
+                    </div>
+                  </div>
+                  <img src="./img/logo-microsoft.png" style="width: 8rem" />
+                </div>
+
+                <div class="page">
+                  <div style="margin-left: 1rem">
+                    <p class="light-text">1992 - 1999</p>
+                    <p>Senior Developer</p>
+                    <p class="colored-text">Youtube</p>
+                  </div>
+
+                  <img src="./img/logo-youtube.png" style="width: 8rem" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="star-text">
+              <span class="material-icons"> home </span>
+              <p>Education</p>
+            </div>
+            <div class="skills">
+              <div class="mark">
+                <div class="dots"></div>
+                <div class="line"></div>
+                <div class="dots"></div>
+              </div>
+
+              <div>
+                <p class="light-text">1973 - 1975</p>
+                <p>Havard University</p>
+                <p class="colored-text">BS Computer Science</p>
+                <p class="light-text">1960 - 1973</p>
+                <p>Lakeside School, Seattle</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="media">
+                <div class="start-text">
+                  <span class="material-icons"> lightbulb </span>
+                  <p>Skills</p>
+                </div>
+                <div class="media-content">
+                  <div class="media-text">
+                    <p class="digit">74</p>
+                    <p>Social Media Marketing</p>
+                  </div>
+
+                  <div class="media-images">
+                    <img src="./img/avatar.jpg" class="header__avatar-image" />
+                    <img src="./img/avatar2.jpg" class="header__avatar-image" />
+                    <img src="./img/avatar3.jpg" class="header__avatar-image" />
+                    <small>71+</small>
+                  </div>
+                </div>
+
+                <div class="media-content">
+                  <div class="media-text">
+                    <p class="digit">67</p>
+                    <p>Web Development</p>
+                  </div>
+
+                  <div class="media-images">
+                    <img src="./img/avatar2.jpg" class="header__avatar-image" />
+                    <img src="./img/avatar3.jpg" class="header__avatar-image" />
+                    <img src="./img/avatar.jpg" class="header__avatar-image" />
+                    <small>17+</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="start-text">
+                  <span class="material-icons"> star_rate </span>
+                  <p>Interests</p>
+                </div>
+
+                <div class="interest-text">
+                  <p class="light-color box-text">Wireless</p>
+                  <p class="light-color box-text">Photography</p>
+                  <p class="light-color box-text">Web design</p>
+                  <p class="light-color box-text">Technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contents__posts-recommendations">
+          <div class="contents__posts-headings">
+            <h3>RECOMENDATIONS</h3>
+            <hr />
+            <div>
+              <span class="material-icons" id="icon"> chevron_left </span>
+              <span class="material-icons" id="icon"> chevron_right </span>
+            </div>
+          </div>
+
+          <div class="recommendation-paragraphs">
+            <div class="recommendation-text">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem excepturi nam autem laboriosam expedita ipsam
+              </p>
+
+              <div>
+                <div class="review-text">
+                  <img src="./img/avatar.jpg" class="header__avatar-image" />
+                  <div>
+                    <p>Steve Jobs</p>
+                    <p class="light-text">Apple</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recommendation-text">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem excepturi nam autem laboriosam expedita ipsam
+              </p>
+
+              <div>
+                <div class="review-text">
+                  <img src="./img/avatar2.jpg" class="header__avatar-image" />
+                  <div>
+                    <p>Mark Zuckerberg</p>
+                    <p class="light-text">Facebook</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="recommendation-text">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem excepturi nam autem laboriosam expedita ipsam
+              </p>
+
+              <div>
+                <div class="review-text">
+                  <img src="./img/avatar3.jpg" class="header__avatar-image" />
+                  <div>
+                    <p>Jeffrey Bezos</p>
+                    <p class="light-text">Amazon</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contents__posts-following">
+          <div class="contents__posts-following-headings">
+            <h3>FOLLOWING</h3>
+          </div>
+
+          <div class="following-content">
+            <div class="following-text">
+              <div class="follow">
+                <img src="./img/logo-microsoft.png" class="following-image" />
+              </div>
+              <div>
+                <p>Microsoft</p>
+                <p class="light-blue"><span class="plus">+</span> Follow</p>
+              </div>
+            </div>
+
+            <div class="following-text">
+              <div class="follow">
+                <img src="./img/logo-amazon.jpg" class="following-image" />
+              </div>
+              <div>
+                <p>Amazon</p>
+                <p class="light-blue"><span class="plus">+</span> Follow</p>
+              </div>
+            </div>
+
+            <div class="following-text">
+              <div class="follow">
+                <img src="./img/logo-microsoft.png" class="following-image" />
+              </div>
+              <div>
+                <p>Microsoft</p>
+                <p class="light-blue"><span class="plus">+</span> Follow</p>
+              </div>
+            </div>
+
+            <div class="following-text">
+              <div class="follow">
+                <img src="./img/logo-amazon.jpg" class="following-image" />
+              </div>
+              <div>
+                <p>Amazon</p>
+                <p class="light-blue"><span class="plus">+</span> Follow</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="twenty">
+            <p>See all (20)</p>
+          </div>
+        </div>
+      </div>
+      <div class="contents__review">
+        <div class="review-headings">PEOPLE ALSO VIEWED</div>
+        <div class="review-text">
+          <img src="./img/avatar.jpg" class="header__avatar-image" />
+          <div>
+            <b>Sergey Brin</b>
+            <p class="light-text">Google</p>
+          </div>
+        </div>
+
+        <div class="review-text">
+          <img src="./img/avatar2.jpg" class="header__avatar-image" />
+          <div>
+            <b>Jeffery Bezos</b>
+            <p class="light-text">Amazon</p>
+          </div>
+        </div>
+
+        <div class="review-text">
+          <img src="./img/avatar3.jpg" class="header__avatar-image" />
+          <div>
+            <b>Steve Jobs</b>
+            <p class="light-text">Apple</p>
+          </div>
+        </div>
+
+        <p class="influencer">MORE INFLUENCERS</p>
+        <div>
+          <span class="material-icons"> chevron_left </span>
+          <img src="./img/avatar3.jpg" class="review-image" />
+          <span class="material-icons"> chevron_right </span>
+          <div class="review-sub-text">
+            <h4>Steve Jobs</h4>
+            <p class="light-text">Apple</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <footer>
+      <p>LinkedIn Corporation &copy; 2014</p>
+    </footer>
+  </body>
+</html>
